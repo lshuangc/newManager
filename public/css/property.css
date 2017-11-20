@@ -1,0 +1,258 @@
+.property{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/*顶部、添加搜索*/
+.property .title{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.property .title .add{
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.property .title input{
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    border: solid 1px #5a98de;
+    padding-left: 10px;
+    float: left;
+    margin-left: 30%;
+    border-radius: 2px;
+}
+.property .title .search{
+    width: 80px;
+    height: 32px;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+    background-color: #5a98de;
+    float: left;
+    border: solid 1px #5a98de;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+}
+
+/*物业公司表格部分-----------------------------*/
+.property .propertyCompany{
+    width: 100%;
+    border-collapse:collapse;
+    border-right: solid #dddddd 1px;
+    border-bottom: solid #dddddd 1px;
+    margin-top: 20px;
+}
+.property .propertyCompany tr{
+    height: 40px;
+    line-height: 40px;
+}
+
+.property .propertyCompany thead tr th{
+    background-color: #f5fafe;
+    border-left: solid #dddddd 1px;
+    border-top: solid #dddddd 1px;
+    font-size: 14px;
+}
+.property .propertyCompany tbody tr td{
+    background-color: white;
+    border-left: solid #dddddd 1px;
+    border-top: solid #dddddd 1px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*详情*/
+.property .propertyCompany .details span{
+    font-size: 14px;
+    color: #419aff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*操作*/
+.property .propertyCompany .do{
+    width: 14%;
+}
+
+.property .propertyCompany .do button{
+    width: 42px;
+    height: 24px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.property .propertyCompany .do .stop{
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+
+/*物业公司添加和修改-------------------------*/
+.property .addBox,
+.property .changeBox
+{
+    width: 26%;
+    min-height: 400px;
+    min-width: 400px;
+    margin: 0 auto;
+    border: solid 1px #d5d5d5;
+    background-color: white;
+    padding: 12px;
+    padding-top: 0;
+    border-radius: 4px;
+    position: absolute;
+    left:36%;
+    top:24%;
+    z-index: 801;
+    display: none;
+}
+
+.property .addBox img,
+.property .changeBox img
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+
+.property .addBox h5,
+.property .changeBox h5
+{
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 1px #d5d5d5;
+}
+.property .addBox ul,
+.property .changeBox ul
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.property .addBox ul li,
+.property .changeBox ul li
+{
+    width: 100%;
+    margin-top: 14px;
+}
+.property .addBox ul li span,
+.property .changeBox ul li span
+{
+    width: 20%;
+    height: 100%;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+}
+.property .addBox ul li input,
+.property .changeBox ul li input
+{
+    width: 68%;
+    height: 30px;
+    display: inline-block;
+    border: solid 1px #d5d5d5;
+    font-size: 14px;
+    padding-left: 8px;
+    cursor: text;
+}
+
+.property .addBox ul li textarea,
+.property .changeBox ul li textarea
+{
+    width: 68%;
+    height: 100px;
+    display: inline-block;
+    border: solid 1px #d5d5d5;
+    font-size: 12px;
+    padding: 4px;
+    resize:none;
+    cursor: text;
+}
+
+.property .addBox button,
+.property .changeBox button
+{
+    display: block;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+
+/*物业公司介绍-------------------------*/
+.property .detailsBox{
+    width: 350px;
+    height: 360px;
+    border: solid 1px #d5d5d5;
+    background-color: white;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    left:38%;
+    top:24%;
+    z-index: 801;
+}
+
+.property .detailsBox img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+
+.property .detailsBox h5{
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 1px #d5d5d5;
+}
+.property .detailsBox textarea{
+    width: 320px;
+    height: 290px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 6px;
+    color: #666666;
+    outline: none;
+    resize:none;
+    border: none;
+    margin-left: 2px;
+
+
+}
+
+
+

@@ -1,0 +1,203 @@
+.moreUser{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.moreUser > button{
+    width: 90px;
+    height: 30px;
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*表格*/
+.moreUser table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid #d5d5d5 1px;
+    margin-top: 20px;
+}
+
+.moreUser table thead tr {
+    background: #f5fafe;
+    line-height: 40px;
+    height: 40px;
+    border: solid #d5d5d5 1px;
+}
+
+.moreUser table thead tr th {
+    font-size: 14px;
+    border-right: solid #d5d5d5 1px;
+}
+
+.moreUser table tbody tr td {
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    background: white;
+    border-right: solid #d5d5d5 1px;
+    border-bottom: solid #d5d5d5 1px;
+}
+.moreUser table tbody tr .do{
+    width: 200px;
+}
+
+
+.moreUser table tbody .moreUserUpdata,.moreUser table tbody .moreUserDelate{
+    width: 50px;
+    height: 26px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    position: relative;
+}
+.moreUser table tbody .moreUserUpdata{
+    width: 80px;
+}
+.moreUser table tbody .moreUserUpdata {
+    right: 10px;
+}
+
+.moreUser table tbody .moreUserDelate {
+    left: 10px;
+}
+
+.moreUser .updataPopup, .delateMoreUser, .moreUserAdd {
+    width: 380px;
+    margin: 0 auto;
+    border: solid 1px #d5d5d5;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 36%;
+    top: 24%;
+    z-index: 801;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.moreUser .img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.moreUser h5 {
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 1px #d5d5d5;
+}
+
+.moreUser ul {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.moreUser ul li {
+    width: 100%;
+    margin-top: 14px;
+}
+
+.moreUser ul li label {
+    width: 32%;
+    height: 100%;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+    padding-left: 40px;
+}
+
+.moreUser .updataPopup ul li label {
+    width: 22%;
+}
+
+.moreUser .updataPopup .verification {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.moreUser .updataPopup .yanzheng {
+    width: 100px;
+}
+.moreUser .updataPopup ul li span{
+    display:block ;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+.moreUser .moreUserAdd input, .moreUser .updataPopup input {
+    border: 1px solid #d5d5d5;
+    padding-left: 8px;
+    width: 185px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.moreUser ::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+.moreUser .moreUserAdopt, .moreUser .moreUserNoway {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0 10px 73px;
+}
+.moreUser .updataPopup .moreUserNoway , .moreUser .updataPopup .moreUserAdopt{
+    margin: 0px 0 10px 73px;
+
+}
+.moreUser .delateMoreUser .moreUserAdopt, .moreUser .delateMoreUser .moreUserNoway {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0 10px 46px;
+}
+
+.moreUser .delateMoreUser p {
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.delateMoreUser {
+    width: 300px;
+}
+
+
+
+

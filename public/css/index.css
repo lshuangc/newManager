@@ -1,0 +1,209 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+
+/*标头----------------------*/
+header{
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    padding-left: 20px;
+    background: rgba(102, 102, 102, 1);
+    border: 1px solid rgba(228, 228, 228, 1);
+    position: relative;
+    z-index: 999;
+}
+
+/*设置*/
+header .set{
+    width:24px;
+    height: 24px;
+    background: url("../img/shezhi1.png") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+header .set_box{
+    width:200px;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+header .set_box li{
+    width:200px;
+    height:0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-top: solid 1px white;
+    color: white;
+    background-color: #666666;
+}
+header .set_box li:hover{
+    background-color: gray;
+}
+/*禁止文字被选中*/
+header .set_box li{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+/*导航菜单*/
+.nav{
+    width: 154px;
+    height: 100%;
+    background: rgba(228, 228, 228, 1);
+    border-right: 1px solid rgba(228, 228, 228, 1);
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+.nav>li{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #666666;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto 10px;
+    cursor: pointer;
+}
+.nav .object,
+.nav .recomment{
+    width: 150px;
+    height: 0;
+    display: none;
+    overflow: hidden;
+}
+.nav .object li,
+.nav .recomment li{
+    width: 120px;
+    height: 0;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #a1a1a1;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav .object li:hover,
+.nav .recomment li:hover{
+    background-color: gray;
+}
+/*禁止文字被选中*/
+.nav li{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+/*主体---------------------*/
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    overflow: auto;
+    padding-top: 50px;
+    padding-left: 160px;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+/*加载盒子*/
+.main .box{
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    overflow: auto;
+    /*border: solid 2px red;*/
+    padding: 20px;
+    position: relative;
+    float: left;
+}
+
+
+
+/*退出登录*/
+.SignOut{
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 901;
+    background-color: white;
+    border-radius: 4px;
+    border: solid 1px #d5d5d5;
+    display: none;
+}
+.SignOut p{
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+.SignOut img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.SignOut h5{
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 1px #d5d5d5;
+}
+
+.SignOut .moreUserAdopt,.SignOut .moreUserNoway{
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+.SignOut .moreUserAdopt{
+    left: 50px;
+}
+.SignOut .moreUserNoway{
+    right: 50px;
+}
+
+
+
+
+

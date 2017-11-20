@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <title>物业公司管理</title>
+
+        <script src="lib/publicJS.js"></script>
+        <script src="js/property.js"></script>
+    </head>
+
+    <body>
+        <div class="property">
+            <!--刷新-->
+            <div class="shuaxin">
+                <img src="img/shuaxin.png"/>
+            </div>
+
+            <!--顶部、添加搜索-->
+            <div class="title">
+                <button class="add">添加物业公司</button>
+                <input type="text" placeholder="请输入物业名搜索"/>
+                <button class="search" data-val="">搜索</button>
+            </div>
+
+            <!--物业公司表格部分-------------------------------->
+            <table class="propertyCompany">
+                <thead>
+                    <tr>
+                        <th>公司名</th>
+                        <th>人数</th>
+                        <th>公司电话</th>
+                        <th>管理小区数</th>
+                        <th>对接人</th>
+                        <th>手机</th>
+                        <th>物业公司介绍</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--<tr>-->
+                        <!--<td>上海洛帮物业有限公司</td>-->
+                        <!--<td>230</td>-->
+                        <!--<td>021-623154</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>王大牛</td>-->
+                        <!--<td>1321221673</td>-->
+                        <!--<td class="details"><span>详情</span></td>-->
+                        <!--<td class="do">-->
+                            <!--<button  class="change">修改</button>-->
+                            <!--<button class="stop">停用</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                </tbody>
+            </table>
+
+
+            <!--分页功能-------------------------->
+            <div class="paging" data-totalPage="1">
+                <button class="upPage">上一页</button>
+                <span class="nowPage">1</span>
+                <button class="downPage">下一页</button>
+                <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+                <button class="yes">确定</button>
+            </div>
+
+
+
+            <!--物业公司添加--------------------------------------->
+            <div class="addBox">
+                <img src="img/chahao9.png"/>
+                <h5>物业公司添加</h5>
+
+                <ul>
+                    <li class="companyName">
+                        <span>公司名：</span>
+                        <input type="text" placeholder="请输入公司名称" data-boolean="false"/>
+                    </li>
+
+                    <li class="peopleNum">
+                        <span>人数：</span>
+                        <input type="text" placeholder="请输入公司人数" data-boolean="false"/>
+                    </li>
+
+                    <li class="companyTel">
+                        <span>公司电话：</span>
+                        <input type="text" placeholder="请输入公司电话" data-boolean="false"/>
+                    </li>
+
+                    <li class="companyDetails">
+                        <span>公司介绍：</span>
+                        <textarea data-boolean="false"></textarea>
+                    </li>
+
+                    <li class="duijiePeople">
+                        <span>对接人：</span>
+                        <input type="text" placeholder="请输入公司对接人" data-boolean="false"/>
+                    </li>
+
+                    <li class="phone">
+                        <span>手机号：</span>
+                        <input type="text" placeholder="请输入公司对接人手机号" data-boolean="false"/>
+                    </li>
+                </ul>
+
+                <button>添加</button>
+            </div>
+
+
+            <!--物业公司修改------------------------------------------->
+            <div class="changeBox">
+                <img src="img/chahao9.png"/>
+                <h5>物业公司添加</h5>
+
+                <ul>
+                    <li class="companyName">
+                        <span>公司名：</span>
+                        <input type="text" placeholder="请输入公司名称" data-boolean="true"/>
+                    </li>
+
+                    <li class="peopleNum">
+                        <span>人数：</span>
+                        <input type="text" placeholder="请输入公司人数" data-boolean="true"/>
+                    </li>
+
+                    <li class="companyTel">
+                        <span>公司电话：</span>
+                        <input type="text" placeholder="请输入公司电话" data-boolean="true"/>
+                    </li>
+
+                    <li class="companyDetails">
+                        <span>公司介绍：</span>
+                        <textarea data-boolean="true"></textarea>
+                    </li>
+
+                    <li class="duijiePeople">
+                        <span>对接人：</span>
+                        <input type="text" placeholder="请输入公司对接人" data-boolean="true"/>
+                    </li>
+
+                    <li class="phone">
+                        <span>手机号：</span>
+                        <input type="text" placeholder="请输入公司对接人手机号" data-boolean="true"/>
+                    </li>
+                </ul>
+                <button data-id="">修改</button>
+
+            </div>
+
+            <!--物业公司详情----------------------------------------->
+            <div class="detailsBox">
+                <img src="img/chahao9.png"/>
+                <h5>物业公司介绍</h5>
+                <textarea readonly="readonly">
+                    上海宏梁物业管理有限公司专业从事保洁、物业承包服务，主要谒诚为上海、江苏、浙江以及周边地区的商场、写字楼、酒店、
+                    饭店、宾馆、企事业单位、小区物业等提供全方位保洁服务。拥有先进的设备，高标准的工作员工及一流的服务质量。
+                    我们一直奉行“信誉至上 ，客户至上”的宗旨，通过不懈努力工作，积累了丰富的工作经验，为美化上海环境做出了突出贡献。
+                    我们拥有一支庞大的专业清洁队伍所有上岗人员均经过严格的培训和考核。
+                    写字楼、酒店、商厦的清洁管理运作以严格管理和规范服务， 树立了良好形象。
+                    其守信、敬业吃苦耐劳的品格受到了广大客户的普遍好评，我们注重人才的素质培养、我们统一着装、言语、
+                    文明、工作一丝不苟、尽职尽责、拾金不昧都受到广大客户一致的好评。
+                </textarea>
+
+            </div>
+
+        </div>
+    </body>
+</html>
+
+
+
+

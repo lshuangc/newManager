@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用户认证管理</title>
+
+    <script src="js/user.js"></script>
+</head>
+
+<body>
+    <div class="user">
+        <!--刷新-->
+        <div class="shuaxin">
+            <img src="img/shuaxin.png"/>
+        </div>
+
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>用户真实姓名</th>
+                        <th>身份证号码</th>
+                        <th>身份证绑定状态</th>
+                        <th>用户电话</th>
+                        <th>是否绑定银行卡</th>
+                        <th>推荐客户数量</th>
+                        <th>注册时间</th>
+                        <th>最后一次登录时间</th>
+                        <!--<th>操作</th>-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--<tr data-id="">-->
+                        <!--<td>1</td>-->
+                        <!--<td>李四</td>-->
+                        <!--<td>50023489665233</td>-->
+                        <!--<td class="cardId">已实名认证</td>-->
+                        <!--<td>15589654789</td>-->
+                        <!--<td class="bankCard">银行卡已绑定</td>-->
+                        <!--<td>5</td>-->
+                        <!--<td>2017.10.15</td>-->
+                        <!--<td>2017.10.15</td>-->
+                        <!--<td ><a href="javascript:" class="userDelate">删除</a> </td>-->
+                    <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--分页功能--------------------------->
+        <div class="paging" data-totalPage="1">
+            <button class="upPage">上一页</button>
+            <span class="nowPage">1</span>
+            <button class="downPage">下一页</button>
+            <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+            <button class="yes">确定</button>
+        </div>
+
+
+        <!--身份证弹出框-->
+        <div class="cardIdPopup">
+            <img class="img" src="img/chahao9.png"/>
+            <h5>身份证详情</h5>
+            <ul>
+                <li>
+                    <span class="span">身份证正面：</span>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <span class="span">身份证反面：</span>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <span class="span">手持身份证：</span>
+                    <img src="" alt="">
+                </li>
+            </ul>
+            <button class="userAdopt">通过</button>
+            <button class="userNoway">驳回</button>
+        </div>
+
+        <!--银行卡弹出框-->
+        <div class="bankCardPopup">
+            <img class="img" src="img/chahao9.png"/>
+            <h5>银行卡信息</h5>
+            <ul>
+                <li>
+                    <span class="span1">开户姓名：</span>
+                    <span class="span2">张三</span>
+                </li>
+                <li>
+                    <span class="span1">开户银行：</span>
+                    <span class="span2">招商</span>
+                </li>
+                <li>
+                    <span class="span1">卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</span>
+                    <span class="span2">18896556985698856985</span>
+                </li>
+                <li>
+                    <span class="span1">绑定时间：</span>
+                    <span class="span2">2017.11.02</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--删除弹出框-->
+        <div class="delateUser">
+            <img class="img" src="img/chahao9.png"/>
+            <span >确定要删除所需数据吗？</span>
+            <button class="userAdopt">确定</button>
+            <button class="userNoway">取消</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

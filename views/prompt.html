@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="bookmark" href="img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <link rel="stylesheet" href="lib/Ecalendar/style.css">
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script src="lib/Ecalendar/Ecalendar.jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/prompt.css">
+</head>
+<body>
+<ul>
+    <li class="add">添加项目</li>
+    <li class="update">修改</li>
+    <li class="details">项目介绍详情</li>
+    <li class="addH">添加楼盘</li>
+    <li class="updateH">修改楼盘</li>
+    <li class="addHT">添加户型</li>
+    <li class="updateHT">修改户型</li>
+</ul>
+<br><br><br>
+
+
+<div class="prompt">
+    <!--刷新-->
+    <div class="shuaxin">
+        <img src="img/shuaxin.png"/>
+    </div>
+
+    <!--添加项目-->
+    <div class="prt addProject">
+        <h3>
+            添加项目
+            <img class="close" src="img/close1.jpg" alt="关闭">
+        </h3>
+        <div class="addBody">
+            <form enctype="multipart/form-data">
+                <div class="addT">
+                    <span>项目图片：</span>
+                    <div class="imgUp">
+                        <input type="hidden" id="">
+                        <div class="fileImg">
+                            <input type="file" name="imgFile" multiple>
+                        </div>
+                        <ul>
+                            <li><img src="img/close1.jpg" alt="项目图片"></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <label>项目名称：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>开发商：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>所在地区：</label>
+                        <select name="sheng">
+                            <option value="上海市">上海市</option>
+                            <option value="北京市">北京市</option>
+                        </select>
+                        <select name="shi">
+                            <option value="上海市">上海市</option>
+                            <option value="北京市">北京市</option>
+                        </select>
+                        <select name="qu">
+                            <option value="徐汇区">徐汇区</option>
+                            <option value="浦东新区">浦东新区</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>详细地址：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>项目卖点：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <label>周边配套：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <label>楼盘详情：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <strong>楼盘参数</strong>
+                    </li>
+                    <li>
+                        <label>建筑商：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>物业公司:</label>
+                        <select name="">
+                            <option value="上海物业">上海物业</option>
+                            <option value="北京物业">北京物业</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button>添加项目</button>
+                        &nbsp; &nbsp;
+                        <button>保存为草稿</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--修改项目-->
+    <div class="prt updateProject">
+        <h3>
+            添加项目
+            <img class="close" src="img/close1.jpg" alt="关闭">
+        </h3>
+        <div class="addBody">
+            <form enctype="multipart/form-data">
+                <div class="addT">
+                    <label>项目图片：</label>
+                    <div class="imgUp">
+                        <input type="hidden">
+                        <div class="fileImg">
+                            <input type="file" name="imgFile" multiple>
+                        </div>
+                        <ul>
+                            <li><img src="img/close1.jpg" alt="项目图片"></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <label>项目名称：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>开发商：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>所在地区：</label>
+                        <select name="sheng">
+                            <option value="上海市">上海市</option>
+                            <option value="北京市">北京市</option>
+                        </select>
+                        <select name="shi">
+                            <option value="上海市">上海市</option>
+                            <option value="北京市">北京市</option>
+                        </select>
+                        <select name="qu">
+                            <option value="徐汇区">徐汇区</option>
+                            <option value="浦东新区">浦东新区</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>详细地址：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>项目卖点：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <label>周边配套：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <label>楼盘详情：</label>
+                        <textarea name="" cols="40" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <strong>楼盘参数</strong>
+                    </li>
+                    <li>
+                        <label>建筑商：</label>
+                        <input type="text" name="nameProject">
+                    </li>
+                    <li>
+                        <label>物业公司:</label>
+                        <select name="">
+                            <option value="上海物业">上海物业</option>
+                            <option value="北京物业">北京物业</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button>添加项目</button>
+                        &nbsp; &nbsp;
+                        <button>保存为草稿</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--项目介绍详情-->
+    <div class="prt detail">
+        <h3>
+            项目介绍
+            <img class="close" src="img/close1.jpg" alt="关闭">
+        </h3>
+        <div class="item">
+            <div class="title">项目卖点</div>
+            <div class="info">
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">周边配套</div>
+            <div class="info">
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">楼盘详情</div>
+            <div class="info">
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+                距九号线漕河泾开发区站500米，学区房、观景房、地铁口。。。
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">楼盘参数</div>
+            <ul>
+                <li>
+                    <span>开发商：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>建筑商：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>销售商：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>物业公司：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>开盘时间：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>交房时间：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>产权年限：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>建筑类别：</span>
+                    <span>轻武器</span>
+                </li>
+                <li>
+                    <span>楼盘地址：</span>
+                    <span>轻武器</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--添加楼盘-->
+    <div class="prt addHouses">
+        <h3>
+            添加楼盘
+            <img class="close" src="img/close1.jpg" alt="关闭">
+        </h3>
+        <div class="addBody">
+            <form action="">
+                <ul>
+                    <li>
+                        <label>楼盘名：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>销售商：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>建筑类型：</label>
+                        <input type="text">
+                    </li>
+                    <li class="kd">
+                        <label>面积范围：</label>
+                        <input type="text"> m² ~
+                        <input type="text"> m²
+                    </li>
+                    <li>
+                        <label>户型范围：</label>
+                        <select>
+                            <option value="1室">1室</option>
+                            <option value="2室">2室</option>
+                            <option value="3室">3室</option>
+                            <option value="4室">4室</option>
+                            <option value="5室">5室</option>
+                            <option value="6室">6室</option>
+                            <option value="7室">7室</option>
+                            <option value="8室">8室</option>
+                        </select>
+                        ~
+                        <select>
+                            <option value="1厅">1厅</option>
+                            <option value="2厅">2厅</option>
+                            <option value="3厅">3厅</option>
+                            <option value="4厅">4厅</option>
+                            <option value="5厅">5厅</option>
+                            <option value="6厅">6厅</option>
+                            <option value="7厅">7厅</option>
+                            <option value="8厅">8厅</option>
+                        </select>
+                    </li>
+                    <li class="kd">
+                        <label>单价范围：</label>
+                        <input type="text"> 万 ~
+                        <input type="text"> 万
+                    </li>
+                    <li class="kd">
+                        <label>总价范围：</label>
+                        <input type="text"> 万 ~
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <label>开盘时间：</label>
+                        <input type="text" id="ECalendar_date1">
+                    </li>
+                    <li>
+                        <label>交房时间：</label>
+                        <input type="text" id="ECalendar_date2">
+                    </li>
+                    <li>
+                        <button>添加楼盘</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--修改楼盘-->
+    <div class="prt updateHouses">
+        <h3>
+            编辑楼盘
+            <img class="close" src="img/close1.jpg" alt="关闭">
+        </h3>
+        <div class="addBody">
+            <form>
+                <ul>
+                    <li>
+                        <label>楼盘名：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>销售商：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>建筑类型：</label>
+                        <input type="text">
+                    </li>
+                    <li class="kd">
+                        <label>面积范围：</label>
+                        <input type="text"> m² ~
+                        <input type="text"> m²
+                    </li>
+                    <li>
+                        <label>户型范围：</label>
+                        <select>
+                            <option value="1室">1室</option>
+                            <option value="2室">2室</option>
+                            <option value="3室">3室</option>
+                            <option value="4室">4室</option>
+                            <option value="5室">5室</option>
+                            <option value="6室">6室</option>
+                            <option value="7室">7室</option>
+                            <option value="8室">8室</option>
+                        </select>
+                        ~
+                        <select>
+                            <option value="1厅">1厅</option>
+                            <option value="2厅">2厅</option>
+                            <option value="3厅">3厅</option>
+                            <option value="4厅">4厅</option>
+                            <option value="5厅">5厅</option>
+                            <option value="6厅">6厅</option>
+                            <option value="7厅">7厅</option>
+                            <option value="8厅">8厅</option>
+                        </select>
+                    </li>
+                    <li class="kd">
+                        <label>单价范围：</label>
+                        <input type="text"> 万 ~
+                        <input type="text"> 万
+                    </li>
+                    <li class="kd">
+                        <label>总价范围：</label>
+                        <input type="text"> 万 ~
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <label>开盘时间：</label>
+                        <input type="text" id="ECalendar_date3">
+                    </li>
+                    <li>
+                        <label>交房时间：</label>
+                        <input type="text" id="ECalendar_date4">
+                    </li>
+                    <li>
+                        <button>修改</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--添加户型-->
+    <div class="prt addHouseType">
+        <h3>
+            添加户型
+            <img class="close" src="img/close1.jpg" alt="">
+        </h3>
+        <div class="addBody">
+            <form>
+                <ul>
+                    <li>
+                        <label>户型：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>户型图：</label>
+                        <div class="imgUp">
+                            <div class="fileImg">
+                                <input type="file" name="imgFile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>面积：</label>
+                        <input type="text"> m²
+                    </li>
+                    <li>
+                        <label>总价：</label>
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <label>单价：</label>
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <strong>推荐金</strong>
+                    </li>
+                    <li class="kd">
+                        <input type="radio" name="hType" checked>
+                        <label>方案1</label>
+                        &nbsp; &nbsp; 每套
+                        <input type="text"> 元
+                    </li>
+                    <li class="kd">
+                        <input type="radio" name="hType">
+                        <label>方案2</label>
+                        &nbsp; &nbsp; 总价
+                        <input type="text"> %
+                    </li>
+                    <li>
+                        <button>添加</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--修改户型-->
+    <div class="prt updateHouseType">
+        <h3>
+            修改户型
+            <img class="close" src="img/close1.jpg" alt="">
+        </h3>
+        <div class="addBody">
+            <form>
+                <ul>
+                    <li>
+                        <label>户型：</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>户型图：</label>
+                        <div class="fileImg">
+                            <input type="file">
+                        </div>
+                    </li>
+                    <li>
+                        <label>面积：</label>
+                        <input type="text"> m²
+                    </li>
+                    <li>
+                        <label>总价：</label>
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <label>单价：</label>
+                        <input type="text"> 万
+                    </li>
+                    <li>
+                        <strong>推荐金</strong>
+                    </li>
+                    <li>
+                        <input type="radio" name="hType" checked>方案1
+                        每套
+                        <input type="text"> 元
+                    </li>
+                    <li>
+                        <input type="radio" name="hType">方案2
+                        总价
+                        <input type="text"> %
+                    </li>
+                    <li>
+                        <button>添加</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        $('li.add').click(function () {
+            $('.prompt').show();
+            $('.prompt .addProject').show();
+        });
+        $('li.update').click(function () {
+            $('.prompt').show();
+            $('.prompt .updateProject').show();
+        });
+        $('li.details').click(function () {
+            $('.prompt').show();
+            $('.prompt .detail').show();
+        });
+        $('li.addH').click(function () {
+            $('.prompt').show();
+            $('.prompt .addHouses').show();
+        });
+        $('li.updateH').click(function () {
+            $('.prompt').show();
+            $('.prompt .updateHouses').show();
+        });
+        $('li.addHT').click(function () {
+            $('.prompt').show();
+            $('.prompt .addHouseType').show();
+        });
+        $('li.updateHT').click(function () {
+            $('.prompt').show();
+            $('.prompt .updateHouseType').show();
+        });
+
+        // 关闭按钮
+        $('.close').click(function () {
+            $('.prompt').hide();
+            $('.prompt .addProject').hide();
+            $('.prompt .updateProject').hide();
+            $('.prompt .detail').hide();
+            $('.prompt .addHouses').hide();
+            $('.prompt .updateHouses').hide();
+            $('.prompt .updateHouses').hide();
+            $('.prompt .addHouseType').hide();
+            $('.prompt .updateHouseType').hide();
+        });
+
+        // 日期选择插件
+        $("#ECalendar_date1").ECalendar({
+            type: "date",   //模式，time: 带时间选择; date: 不带时间选择;
+            stamp: false,   //是否转成时间戳，默认true;
+            offset: [0, 2],   //弹框手动偏移量;
+            format: "yyyy年mm月dd日",   //时间格式 默认 yyyy-mm-dd hh:ii;
+            skin: 'rgba(22, 155, 213, 1)',   //皮肤颜色，默认随机，可选值：0-8,或者直接标注颜色值;
+            step: 10,   //选择时间分钟的精确度;
+            callback: function (v, e) {
+            } //回调函数
+        });
+        $("#ECalendar_date2").ECalendar({
+            type: "date",   //模式，time: 带时间选择; date: 不带时间选择;
+            stamp: false,   //是否转成时间戳，默认true;
+            offset: [0, 2],   //弹框手动偏移量;
+            format: "yyyy年mm月dd日",   //时间格式 默认 yyyy-mm-dd hh:ii;
+            skin: 'rgba(22, 155, 213, 1)',   //皮肤颜色，默认随机，可选值：0-8,或者直接标注颜色值;
+            step: 10,   //选择时间分钟的精确度;
+            callback: function (v, e) {
+            } //回调函数
+        });
+        $("#ECalendar_date3").ECalendar({
+            type: "date",   //模式，time: 带时间选择; date: 不带时间选择;
+            stamp: false,   //是否转成时间戳，默认true;
+            offset: [0, 2],   //弹框手动偏移量;
+            format: "yyyy年mm月dd日",   //时间格式 默认 yyyy-mm-dd hh:ii;
+            skin: 'rgba(22, 155, 213, 1)',   //皮肤颜色，默认随机，可选值：0-8,或者直接标注颜色值;
+            step: 10,   //选择时间分钟的精确度;
+            callback: function (v, e) {
+            } //回调函数
+        });
+        $("#ECalendar_date4").ECalendar({
+            type: "date",   //模式，time: 带时间选择; date: 不带时间选择;
+            stamp: false,   //是否转成时间戳，默认true;
+            offset: [0, 2],   //弹框手动偏移量;
+            format: "yyyy年mm月dd日",   //时间格式 默认 yyyy-mm-dd hh:ii;
+            skin: 'rgb(22, 155, 213)',   //皮肤颜色，默认随机，可选值：0-8,或者直接标注颜色值;
+            step: 10,   //选择时间分钟的精确度;
+            callback: function (v, e) {
+            } //回调函数
+        });
+    })
+</script>
+</body>
+</html>

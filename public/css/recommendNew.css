@@ -1,0 +1,456 @@
+.recommendNew {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.recommendNew .r_header li {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    float: left;
+    background-color: #a1a1a1;
+    cursor: pointer;
+    border-right: solid 1px #d5d5d5;
+}
+
+.recommendNew .r_header .li1 {
+    color: white;
+    background-color: #5a98de;
+    border-right: solid 1px #d5d5d5;
+}
+
+.recommendNew .r_header li.current {
+    background: #5a98de;
+}
+
+.recommendNew .r_body table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.recommendNew .r_body table th {
+    font-size: 14px;
+    background: #f5fafe;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.recommendNew .r_body table tr {
+    height: 40px;
+    line-height: 40px;
+}
+
+.recommendNew .r_body {
+    margin-top: 2px;
+}
+
+.recommendNew .r_body tbody tr {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.recommendNew .r_body tbody tr td {
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/*详细信息模态框*/
+.recommendNew .prompt1 {
+    display: none;
+    z-index: 801;
+}
+
+.recommendNew .prompt2 {
+    display: none;
+    z-index: 901;
+}
+
+.recommendNew .prompt .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.recommendNew .r_box {
+    width: 54%;
+    min-width: 820px;
+    padding: 10px 20px 30px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 801;
+}
+
+.recommendNew .r_box .r_t {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 16px;
+}
+
+.recommendNew .r_box .r_t .r_info {
+    width: 45%;
+}
+
+.recommendNew .r_box .r_t .r_status {
+    width: 55%;
+}
+
+.recommendNew .r_box .r_t h3,
+.recommendNew .r_box .r_b h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.recommendNew .r_box .r_t .r_status h3 {
+    padding-left: 30px;
+}
+
+.recommendNew .r_box .r_info li {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+    border-right: 1px solid #d6d6d6;
+}
+
+.recommendNew .r_box .r_info li span {
+    font-size: 14px;
+}
+
+.recommendNew .r_box .r_info li input {
+    width: 70px;
+    height: 18px;
+    border: 1px solid #d5d5d5;
+    padding-left: 4px;
+    font-size: 12px;
+}
+
+.recommendNew .r_box .r_info li button {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-left: 15px;
+    background: #5a98de;
+}
+
+.recommendNew .r_box .r_status li {
+    width: 90%;
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.recommendNew .r_box .r_status li span {
+    font-size: 12px;
+}
+
+.recommendNew .r_box .r_status li span:first-child {
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+    border-right: 1px solid #d6d6d6;
+}
+
+.recommendNew .r_box .r_status li span:last-child {
+    padding-left: 5px;
+}
+
+.recommendNew .r_box .r_b li {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.recommendNew .r_box .r_b .li2 {
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+
+.recommendNew .r_box .r_b li span {
+    font-size: 15px;
+}
+
+.recommendNew .r_box .r_b li img {
+    width: 100px;
+    height: 120px;
+    vertical-align: top;
+}
+
+.recommendNew .r_b li p {
+    margin-top: 20px;
+}
+
+.recommendNew .r_b li button {
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #5a98de;
+}
+
+.recommendNew .r_b li p button:last-child {
+    margin-left: 30px;
+}
+
+.recommendNew .bigImg {
+    width: 460px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.recommendNew .bigImg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*审核推荐是否有效*/
+.recommendNew .prompt1 .shenhe{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.recommendNew .prompt1 .shenhe button{
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    background-color: #5a98de;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+/*状态确认操作框*/
+.yesDoType{
+    width: 280px;
+    height: 160px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+.yesDoType .guanbi{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+
+.yesDoType .p1,.yesDoType .p2{
+    font-size: 18px;
+    color: #202020;
+    text-align: center;
+    margin-top: 36px;
+    display: none;
+}
+.yesDoType .p3{
+    margin-top: 36px;
+    display: none;
+}
+.yesDoType .p3 span{
+    font-size: 16px;
+    color: #202020;
+}
+.yesDoType .p3 input{
+    width: 150px;
+    height: 24px;
+    font-size: 12px;
+    border: solid 1px #d5d5d5;
+    padding-left: 6px;
+}
+
+.yesDoType button{
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    background-color: #5a98de;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left:100px;
+    display: none;
+}
+.yesDoType .div1, .yesDoType .div2{
+    display: none;
+}
+
+
+/*实付佣金确认操作框*/
+.yesDoMoney{
+    width: 280px;
+    height: 160px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+.yesDoMoney .guanbi{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+.yesDoMoney .p1{
+    font-size: 18px;
+    color: #202020;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.yesDoMoney .p1 span{
+    font-size: 18px;
+    color: red;
+}
+.yesDoMoney button{
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    background-color: #5a98de;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.yesDoMoney .yes{
+    left:40px;
+}
+.yesDoMoney .no{
+    right:40px;
+}
+
+
+/*签约单审核确认操作框*/
+.yesDoSignIn{
+    width: 280px;
+    height: 170px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+.yesDoSignIn .guanbi{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+.yesDoSignIn .p1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    display: none;
+}
+.yesDoSignIn div{
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    display: none;
+}
+.yesDoSignIn .div1{
+    margin-top: 16px;
+}
+.yesDoSignIn div span{
+    font-size: 14px;
+    line-height: 40px;
+}
+.yesDoSignIn div input{
+    width: 120px;
+    height: 24px;
+    font-size: 12px;
+    float: right;
+    border: solid 1px #d5d5d5;
+    margin-top: 8px;
+    padding-left: 0.4rem;
+    margin-right: 50px;
+}
+
+.yesDoSignIn button{
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    background-color: #5a98de;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+.yesDoSignIn .yes{
+    left:40px;
+}
+.yesDoSignIn .no{
+    right:40px;
+}
+
+
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推荐单管理--新房</title>
+
+    <script src="js/recommendNew.js"></script>
+
+</head>
+
+<body>
+<div class="recommendNew">
+    <!--刷新-->
+    <div class="shuaxin">
+        <img src="img/shuaxin.png"/>
+    </div>
+
+    <div class="r_header">
+        <ul class="clearfix" data-recommendProcess="">
+            <li class="li1" data-recommendProcess="">全部</li>
+            <li data-recommendProcess="1">待处理</li>
+            <li data-recommendProcess="2">流程中</li>
+            <li data-recommendProcess="3">已经完成</li>
+            <li data-recommendProcess="4">无效客户</li>
+        </ul>
+    </div>
+    <div class="r_body">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>被推荐人姓名</th>
+                    <th>被推荐人电话</th>
+                    <th>推荐项目</th>
+                    <th>推荐人</th>
+                    <th>推荐人电话</th>
+                    <th>推荐单提交时间</th>
+                    <th>推荐单状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!--<tr data-id="">-->
+                    <!--<td>1</td>-->
+                    <!--<td>张三</td>-->
+                    <!--<td>13266667514</td>-->
+                    <!--<td>秋林苑</td>-->
+                    <!--<td>李四</td>-->
+                    <!--<td>13254789612</td>-->
+                    <!--<td>2017/11/3</td>-->
+                    <!--<td data-status="1">推荐单待我方审核</td>-->
+                <!--</tr>-->
+            </tbody>
+        </table>
+
+
+        <!--分页功能------------------------->
+        <div class="paging" data-totalPage="1">
+            <button class="upPage">上一页</button>
+            <span class="nowPage">1</span>
+            <button class="downPage">下一页</button>
+            <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+            <button class="yes">确定</button>
+        </div>
+
+
+    </div>
+
+    <!--推荐单详情模态框-->
+    <div class="prompt prompt1" data-id="">
+        <div class="r_box">
+            <img class="close close1" src="img/chahao9.png" alt="关闭">
+            <div class="r_t clearfix">
+                <div class="r_info fl">
+                    <h3>推荐单信息</h3>
+                    <ul class="detailsXinXi">
+
+                        <li class="li1">
+                            <span>推荐人：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li2">
+                            <span>推荐人电话：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li3">
+                            <span>被推荐人：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li4">
+                            <span>被推荐人电话：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li5">
+                            <span>推荐单类型：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li6">
+                            <span>推荐项目：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li7">
+                            <span>项目地址：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li8">
+                            <span>推荐单备注：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li9">
+                            <span>推荐单生成日期：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li10">
+                            <span>接待置业顾问：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li11">
+                            <span>顾问电话：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li12">
+                            <span>最终购房成交金额：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li13">
+                            <span>应付推荐人佣金：</span>
+                            <span class="span2"></span>
+                        </li>
+
+                        <li class="li14">
+                            <span>实付推荐人佣金：</span>
+                            <input type="text" name="paidWith" placeholder="请输入佣金" data-boolean="true"/>
+                            <button id="paidBtn">确认实付</button>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="r_status fr">
+                    <h3>推荐单状态</h3>
+                    <ul>
+                        <li><span>2017年11月03日10:25</span><span>交易完成</span></li>
+                        <li><span>2017年11月03日10:25</span><span>我方确认实付推荐人推荐佣金</span></li>
+                        <li><span>2017年11月03日10:25</span><span>我方确认应付推荐人推荐佣金</span></li>
+                        <li><span>2017年11月03日10:25</span><span>甲方已通过购房合同</span></li>
+                        <li><span>2017年11月03日10:25</span><span>等待甲方审核购房合同</span></li>
+                        <li><span>2017年11月03日10:25</span><span>等待我方审核购房合同</span></li>
+                        <li><span>2017年11月03日10:25</span><span>推荐人已上传购房合同</span></li>
+                        <li><span>2017年11月03日10:25</span><span>等待推荐人上传看房合同</span></li>
+                        <li><span>2017年11月03日10:25</span><span>我方通过看房确认单</span></li>
+                        <li><span>2017年11月03日10:25</span><span>看房确认单等待我方审核</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="shenhe">
+                <button class="pass">审核推荐单</button>
+                <button class="noPass">驳回推荐单</button>
+            </div>
+
+            <div class="r_b">
+                <h3>推荐单附件</h3>
+                <ul>
+                    <li class="li1">
+                        <span>看房确认单：</span>
+                        <img class="img1" src="img/fujian1.png" alt="看房确认单"/>
+                        <p>
+                            <button class="pass">通过</button>
+                            <button class="noPass">驳回</button>
+                        </p>
+                    </li>
+
+                    <li class="li2">
+                        <span>购房合同：</span>
+                        <img class="img2" src="img/fujian1.png" alt="购房合同"/>
+
+                        <span style="margin-left: 20px">购房发票：</span>
+                        <img class="img3" src="img/fujian1.png" alt="购房发票"/>
+                        <p>
+                            <button class="pass">通过</button>
+                            <button class="noPass">驳回</button>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt prompt2">
+        <div class="bigImg">
+            <img class="close close2" src="img/chahao9.png" alt="关闭">
+            <img class="yulan" src="img/fujian1.png" alt="大图">
+        </div>
+    </div>
+
+    <!--状态修改确认操作框-->
+    <div class="yesDoType">
+        <img class="guanbi" src="img/chahao9.png" alt="关闭">
+        <p class="p1">是否确认推荐单有效？</p>
+        <p class="p2">是否通过看房确认单审核？</p>
+        <p class="p3">
+            <span>驳回原因：</span>
+            <input type="text" placeholder="请输入驳回原因" data-boolean="false"/>
+        </p>
+
+        <div class="div1">
+            <button class="pass">确认有效</button>
+            <button class="noPass">确认驳回</button>
+        </div>
+
+        <div class="div2">
+            <button class="pass">确认有效</button>
+            <button class="noPass">确认驳回</button>
+        </div>
+    </div>
+
+    <!--实付佣金确认操作框-->
+    <div class="yesDoMoney">
+        <img class="guanbi" src="img/chahao9.png" alt="关闭">
+        <p class="p1">确认实付佣金为 <span>6000元</span> 吗？</p>
+        <button class="yes">确认</button>
+        <button class="no">取消</button>
+    </div>
+
+
+    <!--签约单审核确认操作框-->
+    <div class="yesDoSignIn">
+        <img class="guanbi" src="img/chahao9.png" alt="关闭">
+
+        <p class="p1">确定驳回该推荐单？</p>
+        <div class="div1">
+            <span>应付佣金：</span>
+            <input type="text" placeholder="请输入应付佣金" data-boolean=""/>
+        </div>
+        <div class="div2">
+            <span>房屋成交价：</span>
+            <input type="text" placeholder="请输入房屋成交价" data-boolean=""/>
+        </div>
+
+        <button class="yes" data-type="">确认</button>
+        <button class="no">取消</button>
+    </div>
+  </div>
+</body>
+</html>

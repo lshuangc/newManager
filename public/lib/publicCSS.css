@@ -1,0 +1,224 @@
+/*全局设置*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    margin: 0;
+    border: none;
+}
+li{
+    list-style: none;
+}
+
+input,button{
+    border: none;
+    outline: none;
+}
+
+input::-ms-clear{
+    display:none;
+}
+
+a,input{
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+}
+body{
+    width: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix{
+    *zoom:1;
+}
+
+
+/*禁止文字被选中*/
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+/*验证红框*/
+.redBorder{
+    border: solid 1px firebrick!important;
+    box-shadow: 0 0 4px firebrick;
+}
+
+/*遮罩*/
+.zhezhao{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 800;
+    display: none;
+}
+
+/*提示框*/
+.promptBox{
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 901;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    border: solid 1px #d5d5d5;
+}
+.promptBox img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}
+
+.promptBox p{
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    color: #5a98de;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+
+/*分页功能--------------*/
+.paging{
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+}
+.paging .upPage,.paging .downPage{
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: #5a98de;
+    border-radius: 2px;
+}
+.paging .upPage:hover,.paging .downPage:hover{
+    background-color: #4c8cf5;
+}
+.paging .nowPage{
+    width: 36px;
+    height: 22px;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    vertical-align: top;
+}
+.paging .jumpPage{
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #74756f;
+    margin-left: 20px;
+}
+.paging .jumpPage input{
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    font-size: 12px;
+    color: #202020;
+    text-align: center;
+    border: solid 1px #dbdbdb;
+}
+
+.paging .yes{
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    background-color: #5a98de;
+    border-radius: 2px;
+}
+.paging .yes:hover{
+    background-color: #4c8cf5;
+}
+
+/*右上角刷新*/
+.shuaxin{
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #5a98de;
+    position: absolute;
+    top:0;
+    right:30px;
+    z-index: 100;
+    cursor: pointer;
+}
+.shuaxin img{
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    margin-left: 12px;
+}
+.shuaxin:hover{
+    background-color: #419aff;
+}
+
+
+
+
+
+
+

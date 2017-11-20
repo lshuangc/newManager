@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>销售商管理</title>
+
+    <script src="lib/publicJS.js"></script>
+    <script src="js/seller.js"></script>
+</head>
+
+<body>
+    <div class="seller">
+        <!--刷新-->
+        <div class="shuaxin">
+            <img src="img/shuaxin.png"/>
+        </div>
+
+        <!--顶部、添加搜索-->
+        <div class="title">
+            <input  id="companyName" type="text" placeholder="输入关键字搜索"/>
+            <button class="search" data-val="">搜索</button>
+        </div>
+
+        <!--导航栏-->
+        <ul class="sellerNav" data-companyStatus="0">
+            <li class="li1" data-companyStatus="0">待审核</li>
+            <li class="li2" data-companyStatus="">全部</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>销售商公司名称</th>
+                    <th>公司地址</th>
+                    <th>法人代表</th>
+                    <th>认证资料</th>
+                    <!--<th>对接人</th>-->
+                    <th>电话</th>
+                    <!--<th>在售项目</th>-->
+                    <th>状态</th>
+                    <th>所属</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--<tr>-->
+                    <!--<td>1</td>-->
+                    <!--<td>公司名称</td>-->
+                    <!--<td>上海额</td>-->
+                    <!--<td>张三</td>-->
+                    <!--<td class="details">详情</td>-->
+                    <!--&lt;!&ndash;<td>李四</td>&ndash;&gt;-->
+                    <!--<td>15589652314</td>-->
+                    <!--&lt;!&ndash;<td>项目</td>&ndash;&gt;-->
+                    <!--<td>启用</td>-->
+                    <!--<td>内部公司</td>-->
+                    <!--<td class="do">-->
+                        <!--<button class="pass">通过</button>-->
+                        <!--<button class="noPass">驳回</button>-->
+                    <!--</td>-->
+                <!--</tr>-->
+            </tbody>
+        </table>
+
+
+        <!--分页功能------------------------------->
+        <div class="paging" data-totalPage="1">
+            <button class="upPage">上一页</button>
+            <span class="nowPage">1</span>
+            <button class="downPage">下一页</button>
+            <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+            <button class="yes">确定</button>
+        </div>
+
+
+        <!--详情弹出框-->
+        <div class="detailsBox">
+            <img class="close" src="img/chahao9.png"/>
+            <h5>认证资料</h5>
+            <ul>
+                <li class="li1">
+                    <label>营业执照编号：</label>
+                    <span>5896587745562235578</span>
+                </li>
+                <li class="li2">
+                    <label>营业执照扫描件：</label>
+                    <img src="img/q12.jpg">
+                </li>
+            </ul>
+        </div>
+
+
+        <!--通过弹出框-->
+        <div class="passBox">
+            <img class="close" src="img/chahao9.png"/>
+            <h5>通过审核</h5>
+            <p class="form-num">确定要通过该信息吗？</p>
+
+            <button class="pass">通过</button>
+            <button class="noPass">取消</button>
+
+        </div>
+
+        <!--驳回弹出框-->
+        <div class="noPassBox">
+            <img class="close" src="img/chahao9.png"/>
+            <h5>驳回审核</h5>
+            <div>
+                <label>驳回原因：</label>
+                <select name="" id="select">
+                    <option value="">请选择</option>
+                    <option value="营业执照扫描件模糊">营业执照扫描件模糊</option>
+                    <option value="输入的公司名称与营业执照上不一致">输入的公司名称与营业执照上不一致</option>
+                </select>
+            </div>
+            <button class="pass">确定</button>
+            <button class="noPass">取消</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

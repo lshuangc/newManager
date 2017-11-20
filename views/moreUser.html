@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多用户管理</title>
+    <script src="js/moreUser.js"></script>
+</head>
+<body>
+<div class="moreUser">
+    <!--刷新-->
+    <div class="shuaxin">
+        <img src="img/shuaxin.png"/>
+    </div>
+
+    <button class="add">添加用户</button>
+    <table>
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>手机号</th>
+            <th>邮箱</th>
+            <th>系统身份</th>
+            <th>创建时间</th>
+            <th>最后一次登录时间</th>
+            <th style="width: 50px">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<tr data-id="">-->
+        <!--<td>1</td>-->
+        <!--<td>李四</td>-->
+        <!--<td>5002348966</td>-->
+        <!--<td class="cardId">职责</td>-->
+        <!--<td>2017.10.15</td>-->
+        <!--<td >-->
+            <!--<a href="javascript:" class="moreUserUpdata">修改</a>-->
+            <!--<a href="javascript:" class="moreUserDelate">删除</a>-->
+        <!--</td>-->
+        <!--</tr>-->
+        </tbody>
+    </table>
+
+    <!--分页功能-------------------------->
+    <div class="paging" data-totalPage="1">
+        <button class="upPage">上一页</button>
+        <span class="nowPage">1</span>
+        <button class="downPage">下一页</button>
+        <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+        <button class="yes">确定</button>
+    </div>
+
+<!--添加弹出框-->
+    <div class="moreUserAdd">
+        <img class="img" src="img/chahao9.png"/>
+        <h5>添加用户信息</h5>
+        <ul>
+            <li>
+                <label>姓名：</label>
+                <input class="adminName" type="text" data-boolean="false" placeholder="请输入用户名">
+            </li>
+            <li>
+                <label>手机号（帐号）：</label>
+                <input class="phone" type="text" data-boolean="false" placeholder="请输入手机号">
+            </li>
+            <li>
+                <label>邮箱：</label>
+                <input class="email" type="email" data-boolean="false" placeholder="@">
+            </li>
+            <li>
+                <label>系统身份：</label>
+                <select class="adminRole" name="adminRole" >
+                    <option value="">请选择</option>
+                    <option value="0">普通管理员</option>
+                    <option value="1">超级管理员</option>
+                </select>
+            </li>
+            <li>
+                <label>密码：</label>
+                <input class="password" type="password" data-boolean="false" placeholder="密码由6-12位的数字加字母">
+            </li>
+        </ul>
+        <br>
+        <button class="moreUserAdopt">确定</button>
+        <button class="moreUserNoway">取消</button>
+    </div>
+
+    <!--修改弹出框-->
+    <div class="updataPopup">
+        <img class="img" src="img/chahao9.png"/>
+        <h5>修改用户信息</h5>
+        <ul>
+            <li>
+                <label>验证码：</label>
+                <input type="text" data-boolean="false" class="yanzheng" placeholder="">
+                <button class="verification">发送验证码</button>
+            </li>
+            <li>
+                <label>新密码：</label>
+                <input type="password" data-boolean="false" class="password" placeholder="">
+            </li>
+            <li>
+                <label>确认密码：</label>
+                <input class="queren" type="password" data-boolean="false" placeholder="">
+            </li>
+            <li>
+                <span class="tips" style="display: none" >验证码错误</span>
+            </li>
+        </ul>
+        <br>
+        <button class="moreUserAdopt">修改</button>
+        <button class="moreUserNoway">取消</button>
+    </div>
+
+    <!--删除弹出框-->
+    <div class="delateMoreUser">
+        <img class="img" src="img/chahao9.png"/>
+        <h5>删除数据</h5>
+        <p >确定要删除此用户吗？</p><br>
+        <button class="moreUserAdopt">确定</button>
+        <button class="moreUserNoway">取消</button>
+    </div>
+</div>
+</body>
+</html>

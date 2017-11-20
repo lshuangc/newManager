@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内部项目</title>
+
+	<script src="lib/distpicker/distpicker.data.js"></script>
+	<script src="lib/distpicker/distpicker.js"></script>
+    <script src="lib/publicJS.js"></script>
+    <script src="js/insideProject.js"></script>
+    
+</head>
+<body>
+<div class="insideProject">
+    <!--刷新-->
+    <div class="shuaxin">
+        <img src="img/shuaxin.png"/>
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+            <tr style="border: none">
+                <th scope="col" colspan="10" style="text-align:left;border: none"><a class="insideProjectAdd">添加项目</a></th>
+            </tr>
+            <tr>
+                <th>序号</th>
+                <th>项目名称</th>
+                <th>项目图片</th>
+                <th>项目地址</th>
+                <th>开发商</th>
+                <th>项目介绍</th>
+                <th>物业公司</th>
+                <th>社区店</th>
+                <th>项目添加时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody class="tbody1">
+            <!--<tr data-id="" class="insideProjectclick" style="background: #e6e6e6">-->
+                <!--<td>1</td>-->
+                <!--<td>比亚左岸</td>-->
+                <!--<td><img src="" alt=""></td>-->
+                <!--<td>xxx21号</td>-->
+                <!--<td></td>-->
+                <!--<td class="projectDetail">详情</td>-->
+                <!--<td class="PropertyCompany">楼帮物业公司</td>-->
+                <!--<td class="community">详情</td>-->
+                <!--<td>2017.10.15</td>-->
+                <!--<td>-->
+                    <!--<button class="insideProjectModify">修改</button>&nbsp;-->
+                    <!--<button class="insideProjectDelate">删除</button>-->
+                <!--</td>-->
+            <!--</tr>-->
+
+            <!--<tr class="insideProjectHouse" >-->
+                <!--<td  scope="col" colspan="10">-->
+                    <!--<table >-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th scope="col" colspan="11" style="text-align:left;background: #6dceed;"><a class="insideProjectHouseAdd">添加楼盘</a></th>-->
+                        <!--</tr>-->
+                        <!--<tr style="background: #e8e8e8">-->
+                            <!--<th>序号</th>-->
+                            <!--<th>楼盘</th>-->
+                            <!--<th>销售商</th>-->
+                            <!--<th>建筑类型</th>-->
+                            <!--<th>面积范围（m²）</th>-->
+                            <!--<th>户型范围</th>-->
+                            <!--<th>单价范围（万）</th>-->
+                            <!--<th>总价范围（万）</th>-->
+                            <!--<th>开盘日期</th>-->
+                            <!--<th>交房日期</th>-->
+                            <!--<th>操作</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr data-id="" class="insideProjectHouseClick" style="background: #f0f0f0">-->
+                            <!--<td>1</td>-->
+                            <!--<td>比亚一期</td>-->
+                            <!--<td><img src="" alt=""></td>-->
+                            <!--<td>xxx21号</td>-->
+                            <!--<td></td>-->
+                            <!--<td>详情</td>-->
+                            <!--<td>楼帮物业公司</td>-->
+                            <!--<td>详情</td>-->
+                            <!--<td>详情</td>-->
+                            <!--<td>2017.10.15</td>-->
+                            <!--<td>-->
+                                <!--<button class="insideProjectModify">修改</button>&nbsp;-->
+                                <!--<button class="insideProjectUpOrDown">上线</button>&nbsp;-->
+                                <!--<button class="insideProjectDelate">删除</button>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+
+                        <!--<tr class="insideProjectHouseType">-->
+                            <!--<td  scope="col" colspan="11" >-->
+                                <!--<table>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" colspan="11" style="text-align:left;background: #ace3f5;"><a class="insideProjectHouseTypeAdd">添加户型</a></th>
+                                    </tr>
+                                    <tr style="background: #e8e8e8">
+                                        <th>序号</th>
+                                        <th>户型</th>
+                                        <th>户型图</th>
+                                        <th>户型面积（m²）</th>
+                                        <th>总价（万）</th>
+                                        <th>单价（万）</th>
+                                        <th>推荐金</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr data-id="" style="background: #f0f0f0">
+                                        <td>1</td>
+                                        <td>2室一厅</td>
+                                        <td><img src="" alt=""></td>
+                                        <td>102</td>
+                                        <td>530万</td>
+                                        <td>7.9万</td>
+                                        <td>%0.75</td>
+                                        <td>
+                                            <button class="insideProjectModify">修改</button>&nbsp;
+                                            <button class="insideProjectDelate">删除</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>-->
+                                <!--<table>-->
+                                    <!--<thead>-->
+                                    <!--<tr style="">-->
+                                        <!--<th scope="col" colspan="11" style="text-align:left;background: #ace3f5;"><a class="insideProjectHouseTypeAdd">添加户型</a></th>-->
+                                    <!--</tr>-->
+                                    <!--<tr style="background: #e8e8e8">-->
+                                        <!--<th>序号</th>-->
+                                        <!--<th>户型</th>-->
+                                        <!--<th>户型图</th>-->
+                                        <!--<th>户型面积（m²）</th>-->
+                                        <!--<th>总价（万）</th>-->
+                                        <!--<th>单价（万）</th>-->
+                                        <!--<th>推荐金</th>-->
+                                        <!--<th>操作</th>-->
+                                    <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                    <!--<tr data-id="" style="background: #f0f0f0">-->
+                                        <!--<td>1</td>-->
+                                        <!--<td>2室一厅</td>-->
+                                        <!--<td><img src="" alt=""></td>-->
+                                        <!--<td>102</td>-->
+                                        <!--<td>530万</td>-->
+                                        <!--<td>7.9万</td>-->
+                                        <!--<td>%0.75</td>-->
+                                        <!--<td>-->
+                                            <!--<button class="insideProjectModify">修改</button>&nbsp;-->
+                                            <!--<button class="insideProjectDelate">删除</button>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</td>-->
+            <!--</tr>-->
+
+            </tbody>
+        </table>
+
+
+        <!--分页功能-------------------------->
+        <div class="paging" data-totalPage="1">
+            <button class="upPage">上一页</button>
+            <span class="nowPage">1</span>
+            <button class="downPage">下一页</button>
+            <span class="jumpPage">到第 <input type="text" value=""/> 页</span>
+            <button class="yes">确定</button>
+        </div>
+
+
+    </div>
+    
+    <div class="prompt">
+        <!--添加项目-->
+        <div class="prt addProject">
+            <h3>
+                添加项目
+                <img class="close" src="img/chahao9.png" alt="关闭">
+            </h3>
+            <div class="addBody">
+                <form enctype="multipart/form-data" id="addProjectForm" onsubmit="return false;">
+                    <div class="addT">
+                        <span>项目图片：</span>
+                        <div class="fileImg">
+                            <input type="hidden" name="type" value="7">
+                            <input type="file" name="carouselFigureImg" size="6" id="addProjectImg" value="" class="carouselFigureImg" multiple accept="image/*"  />
+                        </div>
+                    </div>
+                    <div class="imgUp">
+                        <div id="imgBox"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <label>项目名称：</label>
+                            <input type="text" name="name" placeholder="请输入项目名称" class="projectName">
+                        </li>
+                        <li>
+                            <label>开发商：</label>
+                            <input type="text" name="devloper" placeholder="请输入开发商名称" class="devloper">
+                        </li>
+                        <li>
+                            <label>所在地区：</label>
+                            <input type="hidden" name="" id="addSheng">
+                            <input type="hidden" name="cityCode" id="addShi">
+                            <input type="hidden" name="countyCode" id="addQu">
+                            <div data-toggle="distpicker" class="distpicker" id="distpicker1">
+                                <select id="sheng1" class="sheng"></select>
+                                <select id="shi1" class="shi"></select>
+                                <select id="qu1" class="qu"></select>
+                            </div>
+                        </li>
+                        <li>
+                            <label>详细地址：</label>
+                            <input type="text" name="address" placeholder="请输入项目详细地址" class="address">
+                        </li>
+                        <li>
+                            <label>项目卖点：</label>
+                            <textarea name="sellingPoint" cols="40" rows="5" maxlength="500" class="sellingPoint" placeholder="请输入项目卖点（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <label>周边配套：</label>
+                            <textarea name="periPhery" cols="40" rows="5" maxlength="500" class="periPhery" placeholder="请输入周边配套（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <label>楼盘详情：</label>
+                            <textarea name="details" cols="40" rows="5" maxlength="500" class="details" placeholder="请输入楼盘详情（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <strong>楼盘参数</strong>
+                        </li>
+                        <li>
+                            <label>建筑商：</label>
+                            <input type="text" name="builders" class="builders" placeholder="请输入建筑商">
+                        </li>
+                        <li>
+                            <label>物业公司:</label>
+                            <select name="propertyId" class="propertyName"></select>
+                        </li>
+                        <li>
+                            <label>销售商:</label>
+                            <select name="sellersId" class="sellersName"></select>
+                        </li>
+                        <li>
+                            <button class="addProjectBtn">添加项目</button> &nbsp; &nbsp;
+                            <button>保存为草稿</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--修改项目-->
+        <div class="prt updateProject">
+            <h3>
+                编辑项目
+                <img class="close" src="img/chahao9.png" alt="关闭">
+            </h3>
+            <div class="addBody">
+                <form enctype="multipart/form-data" id="updateImgForm" onsubmit="return false;">
+                    <input type="hidden" name="type" value="7">
+                    <div class="addT clearfix">
+                        <span>项目图片：</span>
+                        <div class="xg">
+                            <ul>
+                               <!-- <li>
+                                    <img src="img/chahao9.png" alt="">
+                                    <div class="updateImgBtn">
+                                        修改
+                                        <input type="file" class="carouselFigureImg"/>
+                                    </div>
+                                </li>-->
+                                <li class="lastLi">
+                                    <div class="fileImg">
+                                        <input type="file" size="6" id="addProjectImg" value="" class="carouselFigureImg" multiple accept="image/*"  />
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </form>
+                <form id="updateProjectForm" onsubmit="return false;">
+                    <input type='hidden' name="id" class='hide' value=''>
+                    <ul>
+                        <li>
+                            <label>项目名称：</label>
+                            <input type="text" name="name" placeholder="请输入项目名称" class="projectName">
+                        </li>
+                        <li>
+                            <label>开发商：</label>
+                            <input type="text" name="devloper" placeholder="请输入开发商名称" class="devloper">
+                        </li>
+                        <li>
+                            <label>所在地区：</label>
+                            <input type="hidden" name="" id="updateSheng">
+                            <input type="hidden" name="cityCode" id="updateShi">
+                            <input type="hidden" name="countyCode" id="updateQu">
+                            <div data-toggle="distpicker" class="distpicker" id="distpicker2">
+                                <select id="sheng2" class="sheng"></select>
+                                <select id="shi2" class="shi"></select>
+                                <select id="qu2" class="qu"></select>
+                            </div>
+                        </li>
+                        <li>
+                            <label>详细地址：</label>
+                            <input type="text" name="address" placeholder="请输入项目详细地址" class="address">
+                        </li>
+                        <li>
+                            <label>项目卖点：</label>
+                            <textarea name="sellingPoint" cols="40" rows="5" maxlength="500" class="sellingPoint" placeholder="请输入项目卖点（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <label>周边配套：</label>
+                            <textarea name="periPhery" cols="40" rows="5" maxlength="500" class="periPhery" placeholder="请输入周边配套（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <label>楼盘详情：</label>
+                            <textarea name="details" cols="40" rows="5" maxlength="500" class="details" placeholder="请输入楼盘详情（最多500字哦）"></textarea>
+                        </li>
+                        <li>
+                            <strong>楼盘参数</strong>
+                        </li>
+                        <li>
+                            <label>建筑商：</label>
+                            <input type="text" name="builders" class="builders" placeholder="请输入建筑商">
+                        </li>
+                        <li>
+                            <label>物业公司:</label>
+                            <select name="propertyId" class="propertyName"></select>
+                        </li>
+                        <li>
+                            <label>销售商:</label>
+                            <select name="sellersId" class="sellersName"></select>
+                        </li>
+                        <li>
+                            <button class="updateProjectBtn">修改</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--项目介绍详情-->
+        <div class="prt detail">
+            <h3>
+                项目介绍
+                <img class="close" src="img/chahao9.png" alt="关闭">
+            </h3>
+            <div class="item">
+                <div class="title">项目卖点</div>
+                <div class="info">
+                    <textarea name="" class="sellingpoint" readonly></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">周边配套</div>
+                <div class="info">
+                    <textarea name="" class="periphery" readonly></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">楼盘详情</div>
+                <div class="info">
+                    <textarea name="" class="details" readonly></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">楼盘参数</div>
+                <ul>
+                    <li>
+                        <span>开发商：</span>
+                        <span class="devloper">轻武器</span>
+                    </li>
+                    <li>
+                        <span>建筑商：</span>
+                        <span class="builDers">轻武器</span>
+                    </li>
+                    <!--<li>
+                        <span>销售商：</span>
+                        <span  class="companyName">轻武器</span>
+                    </li>-->
+                    <li>
+                        <span>物业公司：</span>
+                        <span  class="propertyName">轻武器</span>
+                    </li>
+                    <!--<li>
+                        <span>开盘时间：</span>
+                        <span  class="latestSaleTime">轻武器</span>
+                    </li>-->
+                    <!--<li>
+                        <span>交房时间：</span>
+                        <span class="firstHandTime">轻武器</span>
+                    </li>-->
+                    <!--<li>
+                        <span>产权年限：</span>
+                        <span class="builders">轻武器</span>
+                    </li>-->
+                    <!--<li>
+                        <span>建筑类别：</span>
+                        <span class="buildingType">轻武器</span>
+                    </li>-->
+                    <li>
+                        <span>项目地址：</span>
+                        <span class="address">轻武器</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--添加楼盘-->
+        <div class="prt addHouses">
+            <h3>
+                添加楼盘
+                <img class="close" src="img/chahao9.png" alt="关闭">
+            </h3>
+            <div class="addBody">
+                <form id="addCommunityDetailForm" onsubmit="return false;">
+                    <input type="hidden" name="communityId" class="communityId" value="">
+                    <input type="hidden" name="detailStatus" value="1">
+                    <ul>
+                        <li>
+                            <label>楼盘名：</label>
+                            <input type="text" name="detailName">
+                        </li>
+                        <li>
+                            <label>建筑类型：</label>
+                            <input type="text" name="builDingType">
+                        </li>
+                        <li class="kd">
+                            <label>面积范围：</label>
+                            <input type="hidden" name="houseProportionRange" class="houseProportionRange" />
+                            <input type="text" class="houseProportionRange1"> m² -
+                            <input type="text" class="houseProportionRange2"> m²
+                        </li>
+                        <li>
+                            <label>户型范围：</label>
+                            <input name="houseTypeRange" type="hidden" class="houseTypeRange" >
+                            <select class="houseTypeRange1">
+                                <option value="一室">一室</option>
+                                <option value="二室">二室</option>
+                                <option value="三室">三室</option>
+                                <option value="四室">四室</option>
+                                <option value="五室">五室</option>
+                                <option value="六室">六室</option>
+                                <option value="七室">七室</option>
+                                <option value="八室">八室</option>
+                            </select > -
+                            <select class="houseTypeRange2">
+                                <option value="1厅">一厅</option>
+                                <option value="2厅">二厅</option>
+                                <option value="三厅">三厅</option>
+                                <option value="四厅">四厅</option>
+                                <option value="五厅">五厅</option>
+                                <option value="六厅">六厅</option>
+                                <option value="七厅">七厅</option>
+                                <option value="八厅">八厅</option>
+                            </select>
+                        </li>
+                        <li class="kd">
+                            <label>单价范围：</label>
+                            <input name="houseSp" type="hidden" class="houseSp">
+                            <input type="text" class="houseSp1"> 万 -
+                            <input type="text" class="houseSp2"> 万
+                        </li>
+                        <li class="kd">
+                            <label>总价范围：</label>
+                            <input name="averagePrice" type="hidden" class="averagePrice" >
+                            <input type="text" class="averagePrice1"> 万 -
+                            <input type="text" class="averagePrice2"> 万
+                        </li>
+                        <li>
+                            <label>开盘时间：</label>
+                            <input type="text" name="latestSaleTime" id="ECalendar_date1">
+                        </li>
+                        <li>
+                            <label>交房时间：</label>
+                            <input type="text" name="firstHandTime" id="ECalendar_date2">
+                        </li>
+                        <li>
+                            <button class="addCommunityDetailBtn">添加楼盘</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--修改楼盘-->
+        <div class="prt updateHouses">
+            <h3>
+                编辑楼盘
+                <img class="close" src="img/chahao9.png" alt="关闭">
+            </h3>
+            <div class="addBody">
+                <form id="updateCommunityDetailForm" onsubmit="return false;">
+                    <input type="hidden" name="id" class="id" value="">
+                    <input type="hidden" name="communityId" class="communityId" value="">
+                    <input type="hidden" name="detailStatus" class="detailStatus"  value="">
+                    <ul>
+                        <li>
+                            <label>楼盘名：</label>
+                            <input type="text" name="detailName" class="detailName">
+                        </li>
+                        <li>
+                            <label>建筑类型：</label>
+                            <input type="text" name="builDingType" class="builDingType">
+                        </li>
+                        <li class="kd">
+                            <label>面积范围：</label>
+                            <input type="hidden" name="houseProportionRange" class="houseProportionRange" />
+                            <input type="text" class="houseProportionRange3"> m² -
+                            <input type="text" class="houseProportionRange4"> m²
+                        </li>
+                        <li>
+                            <label>户型范围：</label>
+                            <input name="houseTypeRange" type="hidden" class="houseTypeRange" >
+                            <select class="houseTypeRange3">
+                                <option value="一室">一室</option>
+                                <option value="二室">二室</option>
+                                <option value="三室">三室</option>
+                                <option value="四室">四室</option>
+                                <option value="五室">五室</option>
+                                <option value="六室">六室</option>
+                                <option value="七室">七室</option>
+                                <option value="八室">八室</option>
+                            </select > -
+                            <select class="houseTypeRange4">
+                                <option value="1厅">一厅</option>
+                                <option value="2厅">二厅</option>
+                                <option value="三厅">三厅</option>
+                                <option value="四厅">四厅</option>
+                                <option value="五厅">五厅</option>
+                                <option value="六厅">六厅</option>
+                                <option value="七厅">七厅</option>
+                                <option value="八厅">八厅</option>
+                            </select>
+                        </li>
+                        <li class="kd">
+                            <label>单价范围：</label>
+                            <input name="houseSp" type="hidden" class="houseSp">
+                            <input type="text" class="houseSp3"> 万 -
+                            <input type="text" class="houseSp4"> 万
+                        </li>
+                        <li class="kd">
+                            <label>总价范围：</label>
+                            <input name="averagePrice" type="hidden" class="averagePrice" >
+                            <input type="text" class="averagePrice3"> 万 -
+                            <input type="text" class="averagePrice4"> 万
+                        </li>
+                        <li>
+                            <label>开盘时间：</label>
+                            <input type="text" name="latestSaleTime" id="ECalendar_date3">
+                        </li>
+                        <li>
+                            <label>交房时间：</label>
+                            <input type="text" name="firstHandTime" id="ECalendar_date4">
+                        </li>
+                        <li>
+                            <button class="updateCommunityDetailBtn">修改</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--添加户型-->
+        <div class="prt addHouseType">
+            <h3>
+                添加户型
+                <img class="close" src="img/chahao9.png" alt="">
+            </h3>
+            <div class="addBody">
+                <form id="addHouseType" onsubmit="return false;">
+                    <input type="hidden" name="communityId" class="communityId">
+                    <input type="hidden" name="communityDetailId" class="communityDetailId">
+                    <ul>
+                        <li>
+                            <label>户型：</label>
+                            <input type="text" name="typeDatail" placeholder="请输入户型">
+                        </li>
+                        <li>
+                            <label>户型图：</label>
+                            <div class="fileImg">
+                                <input type="file" name="typeImgurl" id="addHouseImg">
+                            </div>
+                        </li>
+                        <li>
+                            <label>面积：</label>
+                            <input type="text" name="typeArea" placeholder="请输入面积"> m²
+                        </li>
+                        <li>
+                            <label>总价：</label>
+                            <input type="text" name="communityTotalPrice" placeholder="请输入总价"> 万
+                        </li>
+                        <li>
+                            <label>单价：</label>
+                            <input type="text" name="communityUnitPrice" placeholder="请输入单价"> 万
+                        </li>
+                        <li>
+                            <strong>推荐金</strong>
+                        </li>
+                        <li class="kd">
+                            <input type="radio" name="type" class="type type1"  value="0" checked>
+                            <label>方案1</label> &nbsp; &nbsp; 每套
+                            <input type="text" class="typeCommision1"> 元
+                        </li>
+                        <li class="kd">
+                            <input type="radio" name="type" class="type type2"  value="1">
+                            <label>方案2</label> &nbsp; &nbsp; 总价
+                            <input type="text" class="typeCommision2" disabled> %
+                        </li>
+                        <li>
+                            <button class="addHouseTypeBtn">添加</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--修改户型-->
+        <div class="prt updateHouseType">
+            <h3>
+                编辑户型
+                <img class="close" src="img/chahao9.png" alt="">
+            </h3>
+            <div class="addBody">
+                <form id="updateHouseType" onsubmit="return false;">
+                    <input type="hidden" name="id" class="houseTypeId">
+                    <input type="hidden" name="communityId" class="communityId">
+                    <input type="hidden" name="communityDetailId" class="communityDetailId">
+                    <ul>
+                        <li>
+                            <label>户型：</label>
+                            <input type="text" name="typeDatail" class="typeDatail" placeholder="请输入户型">
+                        </li>
+                        <li>
+                            <label>户型图：</label>
+                            <div class="fileImg">
+                                <input type="file" name="typeImgurl" class="typeImgurl" id="addHouseImg">
+                            </div>
+                        </li>
+                        <li>
+                            <label>面积：</label>
+                            <input type="text" name="typeArea" class="typeArea" placeholder="请输入面积"> m²
+                        </li>
+                        <li>
+                            <label>总价：</label>
+                            <input type="text" name="communityTotalPrice" class="communityTotalPrice" placeholder="请输入总价"> 万
+                        </li>
+                        <li>
+                            <label>单价：</label>
+                            <input type="text" name="communityUnitPrice" class="communityUnitPrice" placeholder="请输入单价"> 万
+                        </li>
+                        <li>
+                            <strong>推荐金</strong>
+                        </li>
+                        <li class="kd">
+                            <input type="radio" name="type" class="type type1"  value="0">
+                            <label>方案1</label> &nbsp; &nbsp; 每套
+                            <input type="text" class="typeCommision1"> 元
+                        </li>
+                        <li class="kd">
+                            <input type="radio" name="type" class="type type2"  value="1">
+                            <label>方案2</label> &nbsp; &nbsp; 总价
+                            <input type="text" class="typeCommision2"> %
+                        </li>
+                        <li>
+                            <button class="updateHouseTypeBtn">修改</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
